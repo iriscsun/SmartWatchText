@@ -1,0 +1,165 @@
+p {
+  opacity:.7
+}
+
+#displayText {
+
+}
+
+.history {
+  height: 75px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  max-width: 246px;
+  border-color: white;
+  background: white;
+  border-radius: 2px;
+  position: fixed;
+  top: 75%;
+  left: 40%;
+}
+
+.send {
+  float: right;
+    height: 55px;
+  z-index: 10;
+  background-color: #b7b9bc;
+  border:0px;
+  color: white;
+
+}
+
+#msg1 {
+    padding-top: 0px;
+    padding-left: 5px;
+    width: 150px;
+    font-size: .9em;
+  display:inline-block;
+}
+.text {
+  height: 55px;
+  max-width: 246px;
+  border: 1px solid gray;
+  padding-left: 3px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border-color: white;
+  background-color: white;
+}
+
+.sectionBtn {
+  position: absolute;
+  bottom: 4.5px;
+}
+
+.keyBtn {
+  display:inline-block;
+  width: 37px;
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #b7b9bc;
+  border: 0px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.charL {
+      margin-bottom: 7px;
+    margin-right: 1.3px;
+    margin-left: 1.3px;
+    display: inline-block;
+    height: 50px;
+    width: 45px;
+    font-size: 25px;
+    color: #b7b9bc;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #888888;
+    border: 0px;
+    margin-top: 7px;
+}
+
+#k3cont1 button{
+      height: 50px;
+    width: 34.5px;
+}
+.displayDis{
+      text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+.container {
+  max-width: 233px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    border:0px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #888888;
+    position:fixed;
+    top: 25%;
+    
+    left: 42.5%;
+    background-color: #e8ebef;
+}
+.cc{
+  height: 240px;
+  /*width: 272px;*/
+}
+.charCont{
+  display: none;
+}
+.keyboard1{
+  display: block;
+}
+.keyboard2 {
+  display:none;
+}
+.keyboard3{
+  display: none;
+}
+.trialNum{
+      text-align: center;
+    font-size: 1.1em;
+}
+.counter{
+      text-align: center;
+    font-size: 1.1em;
+}
+.downloadBtn{
+
+    width: 50%;
+    /*margin-top: 444px;*/
+    margin-left: 24%;
+    margin-right: 15%;
+    display: inline-block;
+    font-size: 24px;
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #888888;
+    border: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 233px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      border:0px;
+      padding: 10px;
+      box-shadow: 5px 5px 10px #888888;
+      position:fixed;
+    top: 35%;
+    left: 18%;
+      background-color: #e8ebef
+  }
+  .cc{
+    height: 240px;
+    /*width: 272px;*/
+  }
+}

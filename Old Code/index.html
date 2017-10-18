@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>M9: Exercise 3</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type='text/javascript' src="js/main.js"></script>
+    <script src="js/hammer.min.js"></script>
+</head>
+
+<body id="touchTest">
+  <!--<div class="title">Please Type the following:</div>-->
+  <div id="displayText" class= "displayDis">
+
+  </div>
+  <div class="trialNum">Trial Number: </div><div id="counter" class = "counter"></div>
+	<div class="expand">
+  <button class = "downloadBtn" id="download">DOWNLOAD</button>
+
+  </div>
+  <div class="cc container" id="inner">
+
+    <div class="text">
+        <p id="msg1">Start Typing...</p>
+        <button class="send">Send</button>
+    </div>
+		<div id="key1" class="keyboard1">
+      <div id="cont1" class="charCont">
+          <button class="charL" id='t'>t</button>
+          <button class="charL" id='h'>h</button>
+          <button class="charL" id='e'>e</button>
+          <button class="charL" id='r'>r</button>
+          <button class="charL" id='s'>s</button>
+          <button class="charL" id='l'>l</button>
+          <button class="charL" id='i'>i</button>
+          <button class="charL" id='g'>g</button>
+      </div>
+      <div id="cont2" class="charCont">
+          <button class="charL" id='a'>a</button>
+          <button class="charL" id='d'>d</button>
+          <button class="charL" id='n'>n</button>
+          <button class="charL" id='m'>m</button>
+          <button class="charL" id='o'>o</button>
+          <button class="charL" id='u'>u</button>
+          <button class="charL" id='c'>c</button>
+          <button class="charL" id='p'>p</button>
+      </div>
+      <div id="cont3" class="charCont">
+        <button class="charL" id='k'>k</button>
+        <button class="charL" id='f'>f</button>
+        <button class="charL" id='b'>b</button>
+        <button class="charL" id='e'>e</button>
+        <button class="charL" id='j'>j</button>
+        <button class="charL" id='z'>z</button>
+        <button class="charL" id='a'>a</button>
+        <button class="charL" id='y'>y</button>
+      </div>
+      <div id="cont4" class="charCont">
+        <button class="charL" id='i'>i</button>
+        <button class="charL" id='v'>v</button>
+        <button class="charL" id='e'>e</button>
+        <button class="charL" id='w'>w</button>
+        <button class="charL" id='a'>a</button>
+        <button class="charL" id='q'>q</button>
+        <button class="charL" id='u'>u</button>
+        <button class="charL" id='x'>x</button>
+      </div>
+      <div id="cont5" class="charCont">
+        <button class="charL" id='.'>.</button>
+        <button class="charL" id=','>,</button>
+        <button class="charL" id='?'>?</button>
+        <button class="charL" id='!'>!</button>
+        <button class="charL" id='/'>/</button>
+        <button class="charL" id='@'>@</button>
+        <button class="charL" id='('>(</button>
+        <button class="charL" id=')'>)</button>
+      </div>
+      <div class="sectionBtn menu1">
+        <button id="btn1" class="keyBtn">1</button>
+        <button id="btn2" class="keyBtn">2</button>
+        <button id="btn3" class="keyBtn">3</button>
+        <button id="btn4" class="keyBtn">4</button>
+        <button id="btn5" class="keyBtn">5</button>
+      </div>
+    </div>
+
+    <div id="key2" class="keyboard2">
+      <div id="k2cont1" class="charCont">
+          <button class="charL" id='T'>T</button>
+          <button class="charL" id='H'>H</button>
+          <button class="charL" id='E'>E</button>
+          <button class="charL" id='R'>R</button>
+          <button class="charL" id='S'>S</button>
+          <button class="charL" id='L'>L</button>
+          <button class="charL" id='I'>I</button>
+          <button class="charL" id='G'>G</button>
+      </div>
+      <div id="k2cont2" class="charCont">
+          <button class="charL" id='A'>A</button>
+          <button class="charL" id='D'>D</button>
+          <button class="charL" id='N'>N</button>
+          <button class="charL" id='M'>M</button>
+          <button class="charL" id='O'>O</button>
+          <button class="charL" id='U'>U</button>
+          <button class="charL" id='C'>C</button>
+          <button class="charL" id='P'>P</button>
+      </div>
+      <div id="k2cont3" class="charCont">
+        <button class="charL" id='K'>K</button>
+        <button class="charL" id='F'>F</button>
+        <button class="charL" id='B'>B</button>
+        <button class="charL" id='E'>E</button>
+        <button class="charL" id='J'>J</button>
+        <button class="charL" id='Z'>Z</button>
+        <button class="charL" id='A'>A</button>
+        <button class="charL" id='U'>U</button>
+      </div>
+      <div id="k2cont4" class="charCont">
+        <button class="charL" id='I'>I</button>
+        <button class="charL" id='V'>V</button>
+        <button class="charL" id='E'>E</button>
+        <button class="charL" id='W'>W</button>
+        <button class="charL" id='A'>A</button>
+        <button class="charL" id='Q'>Q</button>
+        <button class="charL" id='Z'>Z</button>
+        <button class="charL" id='X'>X</button>
+      </div>
+      <div id="k2cont5" class="charCont">
+        <button class="charL" id='.'>.</button>
+        <button class="charL" id=','>,</button>
+        <button class="charL" id='?'>?</button>
+        <button class="charL" id='!'>!</button>
+        <button class="charL" id='/'>/</button>
+        <button class="charL" id='@'>@</button>
+        <button class="charL" id='('>(</button>
+        <button class="charL" id=')'>)</button>
+      </div>
+      <div className="sectionBtn menu2">
+        <button id="k2btn1" class="keyBtn">1</button>
+        <button id="k2btn2" class="keyBtn">2</button>
+        <button id="k2btn3" class="keyBtn">3</button>
+        <button id="k2btn4" class="keyBtn">4</button>
+        <button id="k2btn5" class="keyBtn">5</button>
+      </div>
+    </div>
+
+    <div id="key3" class="keyboard3">
+      <div id="k3cont1" class="charCont">
+          <button class="charL" id='1'>1</button>
+          <button class="charL" id='2'>2</button>
+          <button class="charL" id='3'>3</button>
+          <button class="charL" id='4'>4</button>
+          <button class="charL" id='5'>5</button>
+          <button class="charL" id='6'>6</button>
+          <button class="charL" id='7'>7</button>
+          <button class="charL" id='8'>8</button>
+          <button class="charL" id='9'>9</button>
+          <button class="charL" id='0'>0</button>
+      </div>
+      <div id="k3cont2" class="charCont">
+          <button class="charL" id='~'>~</button>
+          <button class="charL" id='@'>@</button>
+          <button class="charL" id='#'>#</button>
+          <button class="charL" id='$'>$</button>
+          <button class="charL" id='%'>%</button>
+          <button class="charL" id='^'>^</button>
+          <button class="charL" id='&amp'>&amp</button>
+          <button class="charL" id='*'>*</button>
+      </div>
+      <div id="k3cont3" class="charCont">
+        <button class="charL" id='('>(</button>
+        <button class="charL" id=')'>)</button>
+        <button class="charL" id='-'>-</button>
+        <button class="charL" id='_'>_</button>
+        <button class="charL" id='+'>+</button>
+        <button class="charL" id='='>=</button>
+        <button class="charL" id='{'>{</button>
+        <button class="charL" id='}'>}</button>
+      </div>
+      <div id="k3cont4" class="charCont">
+        <button class="charL" id='['>[</button>
+        <button class="charL" id=']'>]</button>
+        <button class="charL" id='|'>|</button>
+        <button class="charL" id='\'>\</button>
+        <button class="charL" id=':'>:</button>
+        <button class="charL" id=';'>;</button>
+        <button class="charL" id='"'>"</button>
+        <button class="charL" id='\'>'</button>
+      </div>
+      <div id="k3cont5" class="charCont">
+        <button class="charL" id='<'><</button>
+        <button class="charL" id='>'>></button>
+        <button class="charL" id='?'>?</button>
+        <button class="charL" id='/'>/</button>
+        <button class="charL" id='.'>.</button>
+        <button class="charL" id=','>,</button>
+      </div>
+      <div className="sectionBtn menu3">
+        <button id="k3btn1" class="keyBtn">1</button>
+        <button id="k3btn2" class="keyBtn">2</button>
+        <button id="k3btn3" class="keyBtn">3</button>
+        <button id="k3btn4" class="keyBtn">4</button>
+        <button id="k3btn5" class="keyBtn">5</button>
+      </div>
+    </div>
+
+
+
+    <p id="input-p"></p>
+
+
+
+  </div>
+  <div class="history" style = "display:none">
+  </div>
+
+
+</body>
+
+</html>
